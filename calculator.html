@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kawaii Calculator</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+<style>
+
+body {
+  background: linear-gradient(135deg, #ffd6ec, #d6f0ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+}
+
+.calculator {
+  background: #fff0f6;
+  padding: 25px;
+  border-radius: 30px;
+  box-shadow: 0 15px 30px rgba(255, 182, 193, 0.4);
+  text-align: center;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 22px;
+  background: #ffe6f2;
+  text-align: right;
+  box-shadow: inset 0 4px 8px rgba(255, 192, 203, 0.3);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 15px;
+}
+
+button {
+  height: 60px;
+  border: none;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #ffcce6;
+  box-shadow: 0 6px #ff99cc;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ffb3d9;
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #ff99cc;
+}
+
+.operator {
+  background: #cceeff;
+  box-shadow: 0 6px #99ddff;
+}
+
+.equal {
+  background: #b3ffcc;
+  box-shadow: 0 6px #80ffaa;
+}
+
+</style>
+</head>
+<body>
+
+<div class="calculator">
+  <input type="text" class="display" disabled>
+
+  <div class="buttons">
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="operator">+</button>
+
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class="operator">-</button>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class="operator">×</button>
+
+    <button>0</button>
+    <button>.</button>
+    <button class="equal">=</button>
+    <button class="operator">÷</button>
+  </div>
+</div>
+
+</body>
+</html>
